@@ -1,0 +1,42 @@
+<% load static %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'display.css' %}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="registarion form">
+        <h1>Appoinment Form</h1>
+        <form action="#" method="POST">
+            {% csrf_token %}
+            <p>Full Name: </p>
+            <input type="text" name="name" placeholder="Full Name">
+            <p>Phone NO: </p>
+            <input type="tel" name="phone"  value="+91" placeholder="">
+            <p>Email-Id: </p>
+            <input type="email" name="emailid" placeholder="Email@gamil.com">
+            <p>Location: </p>
+            <input type="text" name="location" placeholder="Location..">
+            <p>Schedule Your Appoinment: </p>
+            <input type="date" name="scheduleyourappoinment" placeholder="">
+            <input type="time" name="time" placeholder="">
+
+            <p>Age:</p>
+            <input type="number" name="age" placeholder="age">
+            <br>
+            <p>Gender :</p>  
+            <input type="radio" value="Male" name="gender" checked > Male   
+            <input type="radio" value="Female" name="gender"> Female   
+            <input type="radio" value="Other" name="gender"> Other   
+            <p><button type="submit">SUBMIT</button></p>
+
+
+
+        </form>
+    </div>
+</body>
+</html>

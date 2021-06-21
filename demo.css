@@ -1,0 +1,29 @@
+body {
+    padding: 100px 100px;
+    font-size: 13px;
+    font-style: Verdana, Tahoma, sans-serif;
+    background-color: rgba(168, 15, 41, 0.158);
+}
+     
+input[type=text], input[type=password], input[type=email], textarea {  
+    width: 100%;  
+    padding: 15px;  
+    margin: 5px 0 22px 0;  
+    display: inline-block;  
+    border: none;  
+    background: #f3f0f0;  
+  }  
+
+textarea {
+    width: 400px;
+    height: 150px;
+    max-width: 400px;
+    line-height: 18px;
+}
+.container {  
+    padding: 100px;  
+    background-color: lightblue;  
+}
+div {  
+    padding: 10px 0;  
+ }
